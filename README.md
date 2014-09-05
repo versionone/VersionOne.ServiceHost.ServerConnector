@@ -1,4 +1,3 @@
-VersionOne.ServiceHost.ServerConnector
-======================================
+# VersionOne.ServiceHost.ServerConnector
 
-VersionOne ServiceHost.ServerConnector component for integrations
+A common component used by VersionOne ServiceHost-based integrations.
