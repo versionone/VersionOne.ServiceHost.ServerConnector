@@ -10,6 +10,7 @@ namespace VersionOne.ServiceHost.ServerConnector.Tests
         public void TestMethod1()
         {
             Assert.IsTrue(true);
+
         }
     }
 }
