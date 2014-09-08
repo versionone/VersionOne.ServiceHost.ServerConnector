@@ -5,7 +5,5 @@
     "configuration": "Release",
     "platform": "Any CPU",
     "version": "1.0.0.0",
-    "organizationName": "VersionOne, Inc.", 
-    "major" : "1",
-    "minor" : "0"
+    "organizationName": "VersionOne, Inc."
 }
