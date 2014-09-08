@@ -4,6 +4,7 @@ using System.Linq;
 using VersionOne.SDK.APIClient;
 
 namespace VersionOne.ServerConnector {
+
     // TODO extract interface and inject into VersionOneProcessor
     internal class EntityFactory {
         private readonly IMetaModel metaModel;
