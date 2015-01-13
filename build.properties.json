@@ -5,23 +5,22 @@
     "configuration": "Release",
     "platform": "Any CPU",
     "version": "1.0.0.0",
-    "organizationName": "VersionOne, Inc.",
+    "description":"Internal component used by VersionOne ServiceHost.",
+    "company":"VersionOne, Inc.",
+    "copyright":"Copyright 2008-2015, VersionOne, Inc.",
     "assemblyinfo": [
 			{
 				"id": "VersionOne.ServiceHost.ServerConnector",
 				"product":"VersionOne.ServiceHost.ServerConnector",
-				"title":"VersionOne.ServiceHost.ServerConnector",
-				"description":"Internal component used by VersionOne ServiceHost.",
-				"company":"VersionOne, Inc.",
-				"copyright":"Copyright 2008-2015, VersionOne, Inc."
+				"title":"VersionOne.ServiceHost.ServerConnector"
 			},
 			{
 				"id": "VersionOne.ServiceHost.ServerConnector.Tests",
 				"product":"VersionOne.ServiceHost.ServerConnector.Tests",
-				"title":"VersionOne.ServiceHost.ServerConnector.Tests",
-				"description":"description",
-				"company":"VersionOne, Inc.",
-				"copyright":"Copyright 2008-2015, VersionOne, Inc."
+				"title":"VersionOne.ServiceHost.ServerConnector.Tests"
 			}
-    	]
+    	],
+      "nuspecTokens":{
+        "tags": "VersionOne V1 ServiceHost"
+      }
 }
