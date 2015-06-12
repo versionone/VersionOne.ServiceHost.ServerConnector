@@ -1,7 +1,9 @@
 ﻿using System;
 
-namespace VersionOne.ServerConnector {
-    public class VersionOneException : Exception {
+namespace VersionOne.ServiceHost.ServerConnector
+{
+    public class VersionOneException : Exception
+    {
         public VersionOneException(string message) : base(message) { }
     }
 }

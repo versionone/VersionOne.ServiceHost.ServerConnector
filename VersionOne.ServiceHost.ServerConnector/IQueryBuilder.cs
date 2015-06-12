@@ -1,12 +1,10 @@
-﻿/*(c) Copyright 2012, VersionOne, Inc. All rights reserved. (c)*/
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using VersionOne.SDK.APIClient;
-using VersionOne.ServerConnector.Entities;
-using VersionOne.ServerConnector.Filters;
+using VersionOne.ServiceHost.ServerConnector.Entities;
+using VersionOne.ServiceHost.ServerConnector.Filters;
 
-namespace VersionOne.ServerConnector
+namespace VersionOne.ServiceHost.ServerConnector
 {
-    // TODO refactor APIClient types
     public interface IQueryBuilder
     {
         IDictionary<string, PropertyValues> ListPropertyValues { get; }

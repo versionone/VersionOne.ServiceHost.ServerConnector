@@ -1,7 +1,9 @@
 ﻿using VersionOne.SDK.APIClient;
 
-namespace VersionOne.ServerConnector.Entities {
-    public class ValueId {
+namespace VersionOne.ServiceHost.ServerConnector.Entities
+{
+    public class ValueId
+    {
         internal readonly Oid Oid;
         private readonly string name;
 
@@ -10,33 +12,40 @@ namespace VersionOne.ServerConnector.Entities {
 
         public ValueId() : this(Oid.Null, string.Empty) { }
 
-        protected internal ValueId(Oid oid, string name) {
+        protected internal ValueId(Oid oid, string name)
+        {
             Oid = oid.Momentless;
             this.name = name;
         }
 
-        public static ValueId FromEntity(Entity entity) {
+        public static ValueId FromEntity(Entity entity)
+        {
             return new ValueId(entity.Asset.Oid, entity.Name);
         }
 
-        public override string ToString() {
+        public override string ToString()
+        {
             return name;
         }
 
-        public override bool Equals(object obj) {
-            if (obj == null || (obj.GetType() != typeof(ValueId) && obj.GetType().Name != "TestValueId")) {
+        public override bool Equals(object obj)
+        {
+            if (obj == null || (obj.GetType() != typeof(ValueId) && obj.GetType().Name != "TestValueId"))
+            {
                 return false;
             }
 
-            if(ReferenceEquals(this, obj)) {
+            if (ReferenceEquals(this, obj))
+            {
                 return true;
             }
 
-            var other = (ValueId) obj;
+            var other = (ValueId)obj;
             return Equals(Oid, other.Oid);
         }
 
-        public override int GetHashCode() {
+        public override int GetHashCode()
+        {
             return Oid.GetHashCode();
         }
     }

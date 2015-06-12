@@ -1,10 +1,9 @@
-﻿/*(c) Copyright 2012, VersionOne, Inc. All rights reserved. (c)*/
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using VersionOne.SDK.APIClient;
 
-namespace VersionOne.ServerConnector
+namespace VersionOne.ServiceHost.ServerConnector
 {
     // TODO extract interface and inject into VersionOneProcessor
     internal class EntityFactory

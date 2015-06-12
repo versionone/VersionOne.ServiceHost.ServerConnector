@@ -1,9 +1,12 @@
-namespace VersionOne.ServerConnector.Filters {
-    public class FilterValue {
-        public object Value { get; set;}
+namespace VersionOne.ServiceHost.ServerConnector.Filters
+{
+    public class FilterValue
+    {
+        public object Value { get; set; }
         public FilterValuesActions Action { get; set; }
 
-        public FilterValue(object value, FilterValuesActions action) {
+        public FilterValue(object value, FilterValuesActions action)
+        {
             Value = value;
             Action = action;
         }

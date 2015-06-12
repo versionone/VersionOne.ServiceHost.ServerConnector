@@ -1,13 +1,11 @@
-﻿/*(c) Copyright 2012, VersionOne, Inc. All rights reserved. (c)*/
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using VersionOne.SDK.APIClient;
-using VersionOne.ServerConnector.Entities;
-using VersionOne.ServerConnector.Filters;
-using SdkOrder = VersionOne.SDK.APIClient.OrderBy.Order;
+using VersionOne.ServiceHost.ServerConnector.Entities;
+using VersionOne.ServiceHost.ServerConnector.Filters;
 
-namespace VersionOne.ServerConnector
+namespace VersionOne.ServiceHost.ServerConnector
 {
     public class QueryBuilder : IQueryBuilder
     {

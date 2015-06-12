@@ -1,17 +1,16 @@
-﻿/*(c) Copyright 2012, VersionOne, Inc. All rights reserved. (c)*/
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using System.Xml;
 using VersionOne.SDK.APIClient;
-using VersionOne.ServerConnector.Entities;
-using VersionOne.ServerConnector.Filters;
 using VersionOne.ServiceHost.Core.Configuration;
 using VersionOne.ServiceHost.Core.Logging;
-using System.Xml;
+using VersionOne.ServiceHost.ServerConnector.Entities;
+using VersionOne.ServiceHost.ServerConnector.Filters;
 
-namespace VersionOne.ServerConnector
+namespace VersionOne.ServiceHost.ServerConnector
 {
     // TODO extract hardcoded strings to constants
     // TODO this one is getting huge - it should be split
@@ -306,7 +305,7 @@ namespace VersionOne.ServerConnector
         public string GetWorkitemLink(Workitem workitem)
         {
             string instanceUrl = configuration["ApplicationUrl"].InnerText;
-            if (instanceUrl.LastIndexOf("/") + 1 != instanceUrl.Length) instanceUrl += "/"; 
+            if (instanceUrl.LastIndexOf("/") + 1 != instanceUrl.Length) instanceUrl += "/";
             return string.Format("{0}assetdetail.v1?oid={1}", instanceUrl, workitem.Id);
         }
 
