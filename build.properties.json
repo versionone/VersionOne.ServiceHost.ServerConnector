@@ -4,23 +4,23 @@
     "nugetSources": "http://packages.nuget.org/api/v2/;http://www.myget.org/F/versionone/api/v2/",
     "configuration": "Release",
     "platform": "Any CPU",
-    "version": "1.0.0.0",
-    "description":"Internal component used by VersionOne ServiceHost.",
-    "company":"VersionOne, Inc.",
-    "copyright":"Copyright 2008-2015, VersionOne, Inc.",
+    "version": "2.0.0.0",
+    "description": "Internal component used by VersionOne ServiceHost.",
+    "company": "VersionOne, Inc.",
+    "copyright": "Copyright 2008-2015, VersionOne, Inc.",
     "assemblyinfo": [
-			{
-				"id": "VersionOne.ServiceHost.ServerConnector",
-				"product":"VersionOne.ServiceHost.ServerConnector",
-				"title":"VersionOne.ServiceHost.ServerConnector"
-			},
-			{
-				"id": "VersionOne.ServiceHost.ServerConnector.Tests",
-				"product":"VersionOne.ServiceHost.ServerConnector.Tests",
-				"title":"VersionOne.ServiceHost.ServerConnector.Tests"
-			}
-    	],
-      "nuspecTokens":{
+        {
+            "id": "VersionOne.ServiceHost.ServerConnector",
+            "product": "VersionOne.ServiceHost.ServerConnector",
+            "title": "VersionOne.ServiceHost.ServerConnector"
+        },
+        {
+            "id": "VersionOne.ServiceHost.ServerConnector.Tests",
+            "product": "VersionOne.ServiceHost.ServerConnector.Tests",
+            "title": "VersionOne.ServiceHost.ServerConnector.Tests"
+        }
+    ],
+    "nuspecTokens": {
         "tags": "VersionOne V1 ServiceHost"
-      }
+    }
 }
